@@ -7,7 +7,7 @@ public class Finish : MonoBehaviour
 {
     [SerializeField] private Color _newColor;
     private MeshRenderer _meshRenderer;
-    
+
     private void Start()
     {
         _meshRenderer = GetComponent<MeshRenderer>();

@@ -9,6 +9,8 @@ public class StatsInfoUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _speedPlayerText;
     [SerializeField] private TextMeshProUGUI _rotationAnglePlayerText;
 
+    private bool _isTurnedOff;
+
     void Update()
     {
         ShowStats();
@@ -16,10 +18,17 @@ public class StatsInfoUI : MonoBehaviour
 
     private void ShowStats()
     {
-        var speed = _player.Rb.velocity.magnitude;
-        var angle = Mathf.Rad2Deg * _player.gameObject.transform.rotation.y;
+        var speed = Mathf.RoundToInt(_player.Rb.velocity.magnitude);
+        var angle = Mathf.RoundToInt(360 - _player.gameObject.transform.eulerAngles.y);
+        angle = angle == 360 ? 0 : angle;
         
         _speedPlayerText.text = $"Actual Speed: {speed}";
         _rotationAnglePlayerText.text = $"Angle of rotation: {angle}";
+    }
+
+    public void SwitchStateOfStatsUI()
+    {
+        _isTurnedOff = !_isTurnedOff;
+        gameObject.SetActive(_isTurnedOff);
     }
 }

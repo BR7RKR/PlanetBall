@@ -29,8 +29,6 @@ public class Player : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody>();
         _line = GetComponent<LineRenderer>();
-
-        _angleOfRotation *= Mathf.Deg2Rad;
     }
 
     private void FixedUpdate()
@@ -58,7 +56,7 @@ public class Player : MonoBehaviour
             transform.Rotate(0, _angleOfRotation, 0);
     }
 
-    private void Death() //TODO: доделать механнику смерти персонажа
+    private void Death()
     {
         if (!IsInBorders(transform.position.x, _deathBorderX) || !IsInBorders(transform.position.z, _deathBorderZ))
             IsDead = true;

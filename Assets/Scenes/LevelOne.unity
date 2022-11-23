@@ -3002,6 +3002,10 @@ PrefabInstance:
       propertyPath: _zBorderMin
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 7990258892333047790, guid: 894db3bd9b80ce64c8035b2b6ead0fb5, type: 3}
+      propertyPath: _obstaclesAmount
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 894db3bd9b80ce64c8035b2b6ead0fb5, type: 3}
 --- !u!1 &1719990756

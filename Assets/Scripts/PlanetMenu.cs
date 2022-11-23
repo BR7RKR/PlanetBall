@@ -7,11 +7,6 @@ public class PlanetMenu : MonoBehaviour
 {
     [SerializeField] private float _speedOfRotation;
 
-    private void Start()
-    {
-        _speedOfRotation *= Mathf.Deg2Rad;
-    }
-
     void Update()
     {
         RotateConstantly();
@@ -19,6 +14,6 @@ public class PlanetMenu : MonoBehaviour
 
     private void RotateConstantly()
     {
-        transform.Rotate(0, _speedOfRotation * Time.deltaTime, 0);
+        transform.Rotate(0, _speedOfRotation, 0);
     }
 }
