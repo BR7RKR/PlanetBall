@@ -7,6 +7,8 @@ public class Finish : MonoBehaviour
 {
     [SerializeField] private Color _newColor;
     private MeshRenderer _meshRenderer;
+    
+    public bool IsFinished { get; private set; }
 
     private void Start()
     {
@@ -19,6 +21,7 @@ public class Finish : MonoBehaviour
         {
             _meshRenderer.material.color = _newColor;
             Time.timeScale = 0;
+            IsFinished = true;
         }
     }
 }

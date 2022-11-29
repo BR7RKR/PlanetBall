@@ -28,7 +28,7 @@ public class StatsInfoUI : MonoBehaviour
 
     public void SwitchStateOfStatsUI()
     {
-        _isTurnedOff = !_isTurnedOff;
         gameObject.SetActive(_isTurnedOff);
+        _isTurnedOff = !_isTurnedOff;
     }
 }

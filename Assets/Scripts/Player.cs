@@ -27,6 +27,8 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1;
+        
         _rb = GetComponent<Rigidbody>();
         _line = GetComponent<LineRenderer>();
     }
