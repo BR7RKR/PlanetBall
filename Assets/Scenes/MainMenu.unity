@@ -405,6 +405,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2411619835021622510, guid: e1d7a949f83cdb94ea7165bd82e25148, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6088932530368790839, guid: e1d7a949f83cdb94ea7165bd82e25148, type: 3}
+      propertyPath: _pressedButtonSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8f972279d34dc0a4d931877076e2cff6, type: 3}
     - target: {fileID: 9171250936967635986, guid: e1d7a949f83cdb94ea7165bd82e25148, type: 3}
       propertyPath: m_Name
       value: MenuCanvas
@@ -517,9 +525,9 @@ PrefabInstance:
       propertyPath: _menuUI
       value: 
       objectReference: {fileID: 2411619835021622505}
-    - target: {fileID: 1803968789, guid: 2b0a64c3b428bf3489e56f86d6b51bbd, type: 3}
-      propertyPath: _angleOfRotation
-      value: 0.1
+    - target: {fileID: 1227434637746202309, guid: 2b0a64c3b428bf3489e56f86d6b51bbd, type: 3}
+      propertyPath: Loop
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2782895219713678155, guid: 2b0a64c3b428bf3489e56f86d6b51bbd, type: 3}
       propertyPath: m_Name
