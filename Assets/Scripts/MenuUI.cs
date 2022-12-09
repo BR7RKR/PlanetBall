@@ -7,9 +7,10 @@ public class MenuUI : MonoBehaviour
 {
     [SerializeField] private AudioClip _pressedButtonSound;
     [SerializeField] private GameObject _controlsBackdrop;
-    public bool IsShowingControls { get; private set; }
 
     private AudioSource _audioSource;
+    
+    public bool IsShowingControls { get; private set; }
 
     private void Start()
     {
