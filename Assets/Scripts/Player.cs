@@ -1,9 +1,8 @@
-using System;
-using TMPro;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(AudioSource))]
+[RequireComponent(typeof(LineRenderer))]
 public class Player : MonoBehaviour
 {
     [SerializeField] private AudioClip _hitSound;

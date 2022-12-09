@@ -1,8 +1,7 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(AudioSource))]
 public class MenuUI : MonoBehaviour
 {
     [SerializeField] private AudioClip _pressedButtonSound;
@@ -12,7 +11,7 @@ public class MenuUI : MonoBehaviour
     
     public bool IsShowingControls { get; private set; }
 
-    private void Start()
+    private void Awake()
     {
         _audioSource = GetComponent<AudioSource>();
     }

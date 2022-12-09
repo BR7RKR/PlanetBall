@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -19,7 +18,7 @@ public class InGameUI : MonoBehaviour
     private bool _isWon;
     private bool _isGameOver;
 
-    private void Start()
+    private void Awake()
     {
         _audioSource = GetComponent<AudioSource>();
     }

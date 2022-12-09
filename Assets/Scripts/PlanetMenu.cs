@@ -1,8 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class PlanetMenu : MonoBehaviour
 {
     [SerializeField] private float _angleOfRotation;
@@ -10,7 +8,7 @@ public class PlanetMenu : MonoBehaviour
 
     private AudioSource _inputRotationSound;
     
-    private void Start()
+    private void Awake()
     {
         _inputRotationSound = GetComponent<AudioSource>();
         _inputRotationSound.Play(0);

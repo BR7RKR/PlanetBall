@@ -1,8 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(MeshRenderer))]
 [RequireComponent(typeof(AudioSource))]
 public class Finish : MonoBehaviour
 {
@@ -14,7 +12,7 @@ public class Finish : MonoBehaviour
     
     public bool IsFinished { get; private set; }
 
-    private void Start()
+    private void Awake()
     {
         _meshRenderer = GetComponent<MeshRenderer>();
         _audioSource = GetComponent<AudioSource>();
